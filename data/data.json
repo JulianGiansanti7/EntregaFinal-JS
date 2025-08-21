@@ -1,0 +1,117 @@
+{
+    "guitarras" : [
+        {
+            "id" : 1,
+            "nombre" : "Les Paul Standard 50s Plain Top, Dirty Lemon Burst",
+            "precio" : 2599,
+            "img" : "../images/guitars/lespaul/lespaul_1.webp",
+            "tipo" : "Les Paul"
+        },
+        {
+            "id" : 2,
+            "nombre" : "Les Paul Studio Figured Top - Dark Purple Burst",
+            "precio" : 1799,
+            "img" : "../images/guitars/lespaul/lespaul_2.webp",
+            "tipo" : "Les Paul"
+        },
+        {
+            "id" : 3,
+            "nombre" : "Les Paul Black Standard 50s P-90 - Ebony",
+            "precio" : 2599,
+            "img" : "../images/guitars/lespaul/lespaul_3.webp",
+            "tipo" : "Les Paul"
+        },
+        {
+            "id" : 4,
+            "nombre" : "Les Paul Custom 5A Quilt with F-Holes Cobra Burst",
+            "precio" : 8399,
+            "img" : "../images/guitars/lespaul/lespaul_4.webp",
+            "tipo" : "Les Paul"
+        },
+        {
+            "id" : 5,
+            "nombre" : "SG Standard - Dark Walnut - Tony Iommi",
+            "precio" : 1799,
+            "img" : "../images/guitars/sg/sg_1.webp",
+            "tipo" : "SG"
+        },
+        {
+            "id" : 6,
+            "nombre" : "SG Modern - Dark Purple Burst (Black Sabbath Day)",
+            "precio" : 2599,
+            "img" : "../images/guitars/sg/sg_2.webp",
+            "tipo" : "SG"
+        },
+        {
+            "id" : 7,
+            "nombre" : "EDS-1275 Doubleneck Cherry Red - Jimmy Page",
+            "precio" : 7999,
+            "img" : "../images/guitars/sg/sg_3.webp",
+            "tipo" : "SG"
+        },
+        {
+            "id" : 8,
+            "nombre" : "1962 Les Paul SG Standard, Short Maestro, Ebony Block Cherry",
+            "precio" : 6199,
+            "img" : "../images/guitars/sg/sg_4.webp",
+            "tipo" : "SG"
+        },
+        {
+            "id" : 9,
+            "nombre" : "1958 Korina Explorer (White Pickguard), Ebony, Murphy Lab",
+            "precio" : 11499,
+            "img" : "../images/guitars/explorer/explorer_1.webp",
+            "tipo" : "Explorer"
+        },
+        {
+            "id" : 10,
+            "nombre" : "Explorer Black, Ebony - James Hetfield 1991",
+            "precio" : 2599,
+            "img" : "../images/guitars/explorer/explorer_2.webp",
+            "tipo" : "Explorer"
+        },
+        {
+            "id" : 11,
+            "nombre" : "90s Explorer - Classic White - Dave Mustaine",
+            "precio" : 2599,
+            "img" : "../images/guitars/explorer/explorer_3.webp",
+            "tipo" : "Explorer"
+        },
+        {
+            "id" : 12,
+            "nombre" : "1958 Korina Explorer Reissue (White Pickguard) Natural",
+            "precio" : 9999,
+            "img" : "../images/guitars/explorer/explorer_4.webp",
+            "tipo" : "Explorer"
+        },
+        {
+            "id" : 13,
+            "nombre" : "1942 Banner Southern Jumbo Vintage Sunburst",
+            "precio" : 5299,
+            "img" : "../images/guitars/acoustic/acoustic_1.webp",
+            "tipo" : "Acoustic"
+        },
+        {
+            "id" : 14,
+            "nombre" : "Nathaniel Rateliff LG-2 Western Vintage Sunburst",
+            "precio" : 3399,
+            "img" : "../images/guitars/acoustic/acoustic_2.webp",
+            "tipo" : "Acoustic"
+        },
+        {
+            "id" : 15,
+            "nombre" : "Hummingbird Ultima Autumnburst 2008",
+            "precio" : 9999,
+            "img" : "../images/guitars/acoustic/acoustic_3.webp",
+            "tipo" : "Acoustic"
+        },
+        {
+            "id" : 16,
+            "nombre" : "J-45 Orville Artisan 130th Anniversary Limited Edition Ebony",
+            "precio" : 11999,
+            "img" : "../images/guitars/acoustic/acoustic_4.webp",
+            "tipo" : "Acoustic"
+        }
+        
+    ]
+}

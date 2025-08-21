@@ -1,0 +1,15 @@
+{
+  "name": "entregafinal_js-giansanti",
+  "version": "1.0.0",
+  "description": "Entrega Final JS",
+  "license": "ISC",
+  "author": "Julian Giansanti",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.22.4"
+  }
+}

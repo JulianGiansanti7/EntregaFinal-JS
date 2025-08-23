@@ -12,14 +12,10 @@
             content="Gibson, guitarras Gibson, tienda de guitarras, Gibson Argentina, Les Paul, guitarras eléctricas premium"
         />
         <meta name="author" content="Crucial Sin" />
-        <title>Crucial Sin</title>
-        <link
-            rel="shortcut icon"
-            href="./images/logo.webp"
-            type="image/x-icon"
-        />
+        <title>Crucial Sin - Carrito</title>
+        <link rel="shortcut icon" href="../images/logo.webp" type="image/x-icon" />
         <!-- CSS -->
-        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="../css/styles.css" />
         <!-- Font Poppins -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,112 +45,35 @@
             </a>
         </div>
         <nav class="header_navegation">
-            <a href="#">Inicio</a>
-            <a href="./pages/contacto.html">Contacto</a>
-            <a href="./pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="../index.html">Inicio</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         </nav>
     </header>
-    <!-- __ Carrousel __________________________________________________________________ -->
-    <div id="carouselExampleIndicators" class="carousel slide">
-    <div
-            id="carouselExampleIndicators"
-            class="carousel slide carousel-container"
-        >
-            <div class="carousel-indicators">
-                <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                ></button>
-                <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                ></button>
-                <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                ></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img
-                        src="./images/carrousel/carrusel_1.webp"
-                        class="d-block w-100 img-fluid"
-                        alt="Amplificador Marshall"
-                    />
-                </div>
-                <div class="carousel-item">
-                    <img
-                        src="./images/carrousel/carrusel_2.webp"
-                        class="d-block w-100 img-fluid"
-                        alt="Guitarras"
-                    />
-                </div>
-                <div class="carousel-item">
-                    <img
-                        src="./images/carrousel/carrusel_3.webp"
-                        class="d-block w-100 img-fluid"
-                        alt="Gibson Les Paul"
-                    />
-                </div>
-            </div>
-            <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev"
-            >
-                <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next"
-            >
-                <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
     <!-- __ Main _______________________________________________________________________ -->
-    <main class="home_container">
-        <!-- __ Bienvenida _____________________________________________________________ -->
-        <div class="home_info">
-            <h2 class="subtitle">Bienvenido a</h2>
-            <h1 class="title">Crucial Sin</h1>
-            <p class="paragraph">
-                En Crucial Sin ofrecemos guitarras seleccionadas
-                cuidadosamente por su calidad, sonido y carácter. Porque
-                cada músico merece un instrumento a la altura de su pasión.
-            </p>
+    <main class="carrito_main">
+        <h1 class="title">Carrito de Compra</h1>
+        <div>
+            
         </div>
-        <!-- __ Seccion de Guitarras ___________________________________________________ -->
-        <section class="guitarras_section">
-            <h2 class="title">Nuestras Guitarras</h2>
-            <div class="guitarras_card">
-                <div id="guitarras_container">
-                <!-- ================================================== -->
-                <!-- ===== Guitarras agregadas desde el data.json ===== -->
-                <!-- ================================================== -->
-                </div>
+            <table class="carrito_container">
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Guitarra</th>
+                        <th>Precio</th>
+                        <th>Cant.</th>
+                        <th>Subtotal</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="cartBody"></tbody> 
                 
-            </div>
-        </section>
-    </main>
+            </table>
+            <p class="precio-final">Total: <span id="total">U$0</span></p>
+        
+
+        </main>
     <!-- __ Footer _____________________________________________________________________ -->
     <footer class="footer__container">
         <!-- __ Info ___________________________________________________________________ -->
@@ -197,13 +116,13 @@
                 <!-- __ Page Links ___________________________________________________ -->
                 <div class="links__page">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="#"
+                        <a class="nav-link" href="../index.html"
                             >Inicio</a
                         >
-                        <a class="nav-link" href="./pages/contacto.html"
+                        <a class="nav-link" href="./contacto.html"
                             >Contacto</a
                         >
-                        <a class="nav-link" href="./pages/carrito.html"
+                        <a class="nav-link" href="#"
                             >Carrito</a
                         >
                     </div>
@@ -212,7 +131,9 @@
         </div>
         <!-- __ Logo Inicio __________________________________________________________ -->
         <div class="text-center">
-            <a href="#"><img src="./images/logo.webp" alt="logo" /></a>
+            <a href="../index.html">
+                <img src="../images/logo.webp" alt="Logo Crucial Sin" />
+            </a>
         </div>
         <!-- __ Copyright ____________________________________________________________ -->
         <div class="text-center">
@@ -227,9 +148,7 @@
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"
 ></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 <!-- JS Script -->
-<script type="module" src="./js/main.js"></script>
+<script type="module" src="../js/carrito.js" defer></script>
 </body>
 </html>

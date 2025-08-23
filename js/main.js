@@ -12,19 +12,48 @@ fetch("./data/data.json")
         guitarraElement.innerHTML = `
         <div class="guitar__cards">
             <div class="guitar__cards--info">
-                <a href="#" class="guitar-link">
                     <img src="${guitarra.img}" alt="${guitarra.tipo}" />
                     <h3 class="guitar-title"> ${guitarra.nombre} </h3>
                     <p class="guitar-price">Lista: U$${guitarra.precio}</p>
-                </a>
             </div>
-            <button id="btn" class="guitar-button">Agregar a Carrito</button>
+            <button class="guitar-button" data-id="${guitarra.id}">Agregar a Carrito</button>
         </div>
         `
 
         guitarrasContainer.appendChild(guitarraElement)
         guitarrasContainer.className = ("guitarras_container")
+        
+        const btn = guitarraElement.querySelector('.guitar-button');
+        btn.addEventListener('click', () => {
+
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            
+            const index = cart.findIndex(item => item.id === guitarra.id);
+
+            if (index >= 0) {
+                cart[index].qty += 1;
+                } else {
+                    cart.push({
+                        id: guitarra.id,         
+                        nombre: guitarra.nombre,
+                        precio: guitarra.precio,
+                        img: guitarra.img,
+                        qty: 1
+                    });
+                }
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+            
+            Swal.fire({
+                title: '¡Agregado al carrito!',
+                text: `${guitarra.nombre} fue añadido correctamente.`,
+                icon: 'success',
+                timer: 5000,
+                position: 'top-end',
+                toast: true
+            });
+});
     });
 }).catch( error => {
     console.error("Ha ocurrido un error... " + error)
-});
+})

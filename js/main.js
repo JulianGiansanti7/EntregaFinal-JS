@@ -1,3 +1,5 @@
+// Agregar Guitarras desde JSON
+
 const guitarrasContainer = document.getElementById('guitarras_container');
 
 fetch("./data/data.json")

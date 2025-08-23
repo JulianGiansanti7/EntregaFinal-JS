@@ -477,6 +477,7 @@
 .carrito_container{
     width: 90%;
     margin: 0 auto;
+    border-collapse: collapse;
 }
 
 .precio-final{
@@ -495,14 +496,35 @@
 }
 
 #cartBody td{
-    border: 1px solid var(--dark-color);
     text-align: center;
     font-weight: 600;
     padding: 10px;
 }
 
+.carrito_container tbody tr{
+    border: 1px solid #eee;
+}
+
 #cartBody td img{
     object-fit: cover;
-    width: 50px;
+    width: 80px;
     height: 150px;
+}
+
+@media (max-width: 576px ) {
+    .carrito_container thead{
+    display: none;
+}
+.carrito_container tbody tr {
+    display: grid;
+    grid-template-columns: 72px 1fr auto;
+    grid-template-areas:
+    "img title remove"
+    "img price qty"
+    "img subtotal subtotal";
+    gap: 8px 12px;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
 }

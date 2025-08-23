@@ -32,10 +32,10 @@ function renderCart() {
     tbody.addEventListener('click', (e) => {
     if (!e.target.classList.contains('remove')) return;
 
-    const id = String(e.target.dataset.id);          // <-- normalizamos a string
+    const id = String(e.target.dataset.id);
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    cart = cart.filter(item => String(item.id) !== id); // <-- comparamos como string
+    cart = cart.filter(item => String(item.id) !== id);
     localStorage.setItem('cart', JSON.stringify(cart));
 
     renderCart();
